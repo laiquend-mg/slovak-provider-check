@@ -45,9 +45,8 @@ export default function SearchBar({ inputRef }: SearchBarProps) {
                 <select
                     className="h-full bg-gray-800 text-white px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
                     value={type}
-                    onChange={(e) => setType(e.target.value as "all" | "movie" | "tv")}
+                    onChange={(e) => setType(e.target.value as "movie" | "tv")}
                 >
-                    <option value="all">Všetko</option>
                     <option value="movie">Filmy</option>
                     <option value="tv">Seriály</option>
                 </select>
