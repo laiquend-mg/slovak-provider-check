@@ -11,7 +11,7 @@ interface SearchBarProps {
 
 export default function SearchBar({ inputRef }: SearchBarProps) {
     const [query, setQuery] = useState("");
-    const [type, setType] = useState<"all" | "movie" | "tv">("all");
+    const [type, setType] = useState<"all" | "movie" | "tv">("movie");
     const router = useRouter();
     // const [results, setResults] = useState<any[]>([]);
     // const [loading, setLoading] = useState(false);
